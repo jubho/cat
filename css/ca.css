@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+* {
+	margin:0; padding:0; box-sizing:border-box;
+}
+html {scroll-behavior:smooth;}
+html, body {font-family: 'Black Han Sans', sans-serif;}
+
+/*상단(왼쪽): 로고와 메뉴*/
+header {
+	position:fixed; z-index:1;
+	top:60px; left:50px;
+}
+
+nav {position:fixed; z-index:1; top:150pt; left:0;
+width:150pt;}
+
+nav ul {list-style:none; line-height:30pt;}
+
+nav a {
+	display:block; text-align:right;
+	text-decoration:none; font-size:14px;
+	color:#444; border-top:1.1pt solid #777;
+		padding:0 3pt 15pt 0;
+}
+
+nav li:last-child a {
+	border-bottom:1.1pt solid #777;
+}
+
+/*왼쪽메뉴 호버*/
+nav a {transition:0.5s;}
+nav a:hover, .menuOver {
+	font-size:20px;
+}
+
+.m1 {color:#FF85CA;}
+.m2 {color:white;}
+.m3 {color:#f07320;}
+.m4 {color:#6799FF;}
+
+/*메인*/
+main {width:100vw;}
+
+main section {
+	height:100vh;
+	background-size:cover;
+	background-position:right center;
+	background-attachment:fixed;
+	overflow:hidden;
+	padding-top:200pt;
+}
+
+#cat1 {background-image:url("../images/c1.jpg");}
+
+#cat2 {background-image:url("../images/c2.jpg");}
+
+#cat3 {background-image:url("../images/c3.jpg");}
+
+#cat4 {background-image:url("../images/c4.jpg");}
+
+main div {
+	margin-left:240px;
+	background-color:rgba(255,255,255 , 0.3);
+	padding:20px 20px 20px 70px;
+	border-top-left-radius:50pt;
+}
+
+main h1 {
+	font-size:2.5rem; font-weight:normal;
+}
+
+main p {font:1.5rem; font-family: 'Sunflower', sans-serif;
+color:#333;}
+
+main b {font-size:1rem;}
+
+#cat1 h1 {color:#FF85CA;}
+#cat2 h1 {color:white; text-shadow:0 1px 10px rgba(0,0,0, 0.3);}
+#cat3 h1 {color:#f07320;}
+#cat4 h1 {color:#6799FF;}
+
+#cat3 p {color:black;}
+
+
+
+
+
+
